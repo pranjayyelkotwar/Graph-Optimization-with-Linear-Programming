@@ -1,0 +1,303 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.30)  30 NOV 2023 23:26
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main_5.tex
+(main_5.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+
+(C:\Users\Avanish Mohgaonkar\AppData\Local\Programs\MiKTeX\tex/latex/base\artic
+le.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+
+(C:\Users\Avanish Mohgaonkar\AppData\Local\Programs\MiKTeX\tex/latex/base\size1
+0.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\Avanish Mohgaonkar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\
+l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box51
+) (main_5.aux)
+\openout1 = `main_5.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 9.
+
+Overfull \hbox (62.02792pt too wide) in paragraph at lines 9--9
+ [][] 
+ []
+
+[1
+
+{C:/Users/Avanish Mohgaonkar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 43.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 43.
+
+! Undefined control sequence.
+l.53 	\text
+           {The objective function is to maximize the total preference score...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 	\text
+           {For } j \in X_1,\ \text{ if }\ X_{ij} = 1,\ \text{ then }\ t_i =...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 	\text{For } j \in X_1,\ \text
+                                   { if }\ X_{ij} = 1,\ \text{ then }\ t_i =...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 ... \in X_1,\ \text{ if }\ X_{ij} = 1,\ \text
+                                                  { then }\ t_i = 1\ \text {...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 ...X_{ij} = 1,\ \text{ then }\ t_i = 1\ \text
+                                                   { and }\ n_j = 2.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 	\text
+           {For }  j \in X_2,\  \text { if }\ X_{ij} = 1,\ \text {   then } ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 	\text{For }  j \in X_2,\  \text
+                                      { if }\ X_{ij} = 1,\ \text {   then } ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 ...in X_2,\  \text { if }\ X_{ij} = 1,\ \text
+                                                   {   then } \ t_i = 1  \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 ...j} = 1,\ \text {   then } \ t_i = 1  \text
+                                                  { and }\ n_j = 1 \text{ or...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 ...n } \ t_i = 1  \text{ and }\ n_j = 1 \text
+                                                  { or }\ t_i = 1\ \text{ an...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.77 ...and }\ n_j = 1 \text{ or }\ t_i = 1\ \text
+                                                  { and }\ n_j = 2.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[2]
+! Undefined control sequence.
+l.81 	\text
+           {For } j \in X_3,\text{ if } X_{ij} = 1, \text{ then }\ t_i = 1\ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 	\text{For } j \in X_3,\text
+                                 { if } X_{ij} = 1, \text{ then }\ t_i = 1\ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ... } j \in X_3,\text{ if } X_{ij} = 1, \text
+                                                  { then }\ t_i = 1\ \text{ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ... X_{ij} = 1, \text{ then }\ t_i = 1\ \text
+                                                  { and }\ n_j = 2\  \text{ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ... }\ t_i = 1\ \text{ and }\ n_j = 2\  \text
+                                                  { or }\ t_i = 2\ \text{ an...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ...d }\ n_j = 2\  \text{ or }\ t_i = 2\ \text
+                                                  { and } \n_j = 2\ \text{ o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ... 2\  \text{ or }\ t_i = 2\ \text{ and } \n
+                                                  _j = 2\ \text{ or }\ t_i = 3.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.81 ...r }\ t_i = 2\ \text{ and } \n_j = 2\ \text
+                                                  { or }\ t_i = 3.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.92 	\text
+           {Limiting the binary variables $X_{ij}$ to be between 0 and 1.}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+! Undefined control sequence.
+l.99 	code and documentation here: \href
+                                        {https://github.com/pranjayyelkotwar...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3] (main_5.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-09>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 478 strings out of 474587
+ 9278 string characters out of 5739529
+ 1932558 words of memory out of 5000000
+ 22731 multiletter control sequences out of 15000+600000
+ 562997 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,6n,50p,529b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Avanish Mohgaonkar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
+c/dpi600\tcrm1000.pk><C:/Users/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Avanish Mohgaonkar/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Avani
+sh Mohgaonkar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex
+10.pfb><C:/Users/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><C:/Users/Avanish Mohgaonkar/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Avanish Mohgaonkar/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
+s/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr12.pfb><C:/Users/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Users/Avanish Mohgaonkar/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Avanish Mohgaon
+kar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/U
+sers/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/Avanish Mohgaonkar/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Avanish Mohgaonkar/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main_5.pdf (3 pages, 175773 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
