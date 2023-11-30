@@ -22,7 +22,7 @@ The objective function aims to maximize the double summation of Xij · pij over 
 ## Constraints
 
 1. **Professor Assignment Constraint:**
-   \[ \sum_{j \in J} X_{ij} = t_i, \forall i \in I \]
+   - \[ \sum_{j \in J} X_{ij} = t_i \text{,} \forall i \in I \]
 
 2. **Category-Specific Constraints:**
    - For \( j \in X_1 \):
@@ -33,10 +33,10 @@ The objective function aims to maximize the double summation of Xij · pij over 
      - If \( X_{ij} = 1 \), then \( t_i = 1 \) and \( n_j = 2 \) or \( t_i = 2 \) and \( n_j = 2 \) or \( t_i = 3 \).
 
 3. **Assignment Range Constraint:**
-   \[ 1 \leq \sum_{j \in J} X_{ij} \leq 2, \forall i \in I \]
+   - \[ 1 \leq \sum_{j \in J} X_{ij} \leq 2, \forall i \in I \]
 
 4. **Professor Course Load Constraint:**
-   \[ \sum_{i \in I} X_{ij} = N_j, \forall j \in J \]
+   - \[ \sum_{i \in I} X_{ij} = N_j \text{,} \forall j \in J \]
 
 ## Usage
 
