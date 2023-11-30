@@ -1,0 +1,122 @@
+\documentclass{article}
+
+\title{Graph optimization with Linear Programming}
+\author{Avanish(2022A7PS0067G),Pranjay(2022A7PS1209), Paras(2022A7PS1243G)}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+			
+		An Application of Graph Optimization-Course Project
+		
+		The focus of this project is the optimization of the University Course Assignment System, addressing the intricate task of efficiently assigning courses to faculty members based on their preferences. Within the department, faculty members are categorized into three groups: "X1," "X2," and "X3," each handling distinct course loads of 0.5, 1, and 1.5 courses per semester, respectively.
+		
+		In this dynamic system, faculty members have the flexibility to take multiple courses in a semester, and conversely, a single course may be assigned to multiple faculty members, with each professor's load adjusted accordingly. Additionally, faculty members maintain a preference list of courses, reflecting their personal priorities, with the most favored courses occupying the top positions. It's crucial to note that there is no prioritization among faculty members within the same category.
+		
+	\end{abstract}
+
+
+	\section{Problem Formulation}
+	
+	The primary objective of this research problem is to devise an assignment scheme maximizing the number of courses assigned to faculty while respecting their preferences and adhering to category-based constraints. The challenge lies in ensuring that a course is only assigned to a faculty member if it appears in their preference list.
+	
+	This problem's uniqueness stems from the flexibility it offers regarding the number of courses faculty members can take, diverging from typical Assignment problems. Potential modifications might include adjusting the maximum number of courses for each category or extending the number of professor categories for a more generalized solution.
+	
+	\section{Method Adopted} 
+	
+	To tackle this optimization challenge, we employed a solution based on integer linear programming using the ortools library. The decision variables (Xij) were utilized to represent whether professor j teaches course i.
+	
+	The model includes constraints for each professor category, ensuring compliance with the specified course load limits. Furthermore, constraints were established to guarantee that courses were only assigned to faculty members present in their priority list.
+	
+	The objective function aimed to maximize the total score, considering the product of preference values and assignment variables. The Cp\_model from ortools was then employed to solve the model.
+	
+	The results showcased the total professor score, the courses assigned to each professor, and relevant statistics such as conflicts, branches, and wall time. While the presented code generates the absolute best-case scenario, it acknowledges the occasional assignment of only 1 course equivalent to X3 category professors.
+	
+	This optimization approach provides a robust framework for course assignments, offering flexibility while adhering to faculty preferences and category-based constraints. Further, the potential for modifications allows for a versatile application across different academic scenarios.
+	
+	The mathematical model is developed to minimize and resolve the problems of teaching load allocation. This model is based on an optimization model proposed [1]. The notations used in this paper are listed below.
+	
+	\begin{itemize}
+		\item $I$: The set of all courses, $i$
+		\item $J$: The set of all professors, $j$
+		\item $p_{ij}$: Preference weight for course $i$, professor $j$
+		\item $t_i$: Number of professors teaching course $i$
+		\item $N_j$: Number of courses taught by professor $j$
+		\item $X_{ij}$: Binary variable (0,1) indicating if professor $j$ teaches course $i$
+	\end{itemize}
+	
+	The objective function aims to maximize the double summation of $X_{ij} \cdot p_{ij}$ over all courses and professors:
+	
+	\text{The objective function is to maximize the total preference score over all possible assignments:}
+	The double summation of $X_{ij} \cdot p_{ij}$ over $i$ and $j$ is expressed as:
+
+	\[
+	\sum_{i=1}^{m} \sum_{j=1}^{n} X_{ij} \cdot p_{ij}
+	\]
+	
+	
+	The constraints include:
+	
+	\[
+	\sum_{i \in I} X_{ij} = n_j, \quad \forall j \in J
+	\]
+	
+	\[
+	\sum_{j \in J} X_{ij}  = t_i, \quad \forall i \in I.
+	\]
+	
+	\[
+	\text{For } j \in X_1,\ \text{ if }\ X_{ij} = 1,\ \text{ then }\ t_i = 1\ \text { and }\ n_j = 2.
+	\]
+
+	
+	\[
+	\text{For }  j \in X_2,\  \text { if }\ X_{ij} = 1,\ \text {   then } \ t_i = 1  \text{ and }\ n_j = 1 \text{ or }\ t_i = 1\ \text{ and }\ n_j = 2.
+	\]
+	
+	\[
+	\text{For } j \in X_3,\text{ if } X_{ij} = 1, \text{ then }\ t_i = 1\ \text{ and }\ n_j = 2\  \text{ or }\ t_i = 2\ \text{ and } \n_j = 2\ \text{ or }\ t_i = 3.
+	\]
+	
+	
+	\[
+	1 \leq \sum_{j \in J} X_{ij} \leq 2, \quad \forall i \in I
+	\]
+	
+
+	
+	
+	\text{Limiting the binary variables $X_{ij}$ to be between 0 and 1.}
+	
+	
+	The objective function maximizes the total number of courses taught by professors while considering their preference weights. Constraints ensure the proper allocation of classes and contact hours for both courses and professors.\\
+	
+    
+    You can find the GitHub repository for the complete 
+	code and documentation here: \href{https://github.com/pranjayyelkotwar/Graph-Optimization-with-Linear-Programming}
+
+	
+	\begin{thebibliography}{9}
+		\bibitem{fairuz}
+		Fairuz Shohaimay,Anisah Dasman,Azimah Suparlan
+		\emph{Teaching Load Allocation using Linear Programming: A Case Study in Mathematics Department}
+		Universiti Teknologi MARA
+		
+		\bibitem{mengzuan}
+		Mengxuan Wu, Jingjing Jiang, Lijuan Wang
+		\emph{Research on the Optimization Algorithm of Big Data Computing System}
+		 IEEE
+		 
+		\bibitem{Montemanni}
+		 Prof. Dr. Roberto Montemanni
+		 \emph{Topical Collection "Feature Papers in Combinatorial Optimization, Graph, and Network Algorithms"}
+		 Prof. Dr. Roberto Montemanni
+		 
+		 
+		
+	\end{thebibliography}
+	
+\end{document}
