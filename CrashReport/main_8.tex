@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\begin{document}
+	
+	\section*{Crash Report}
+	\textbf{Summary:} The University Course Assignment System optimization code displays inconsistent behavior in assigning course loads to X3 professors. While most instances correctly allocate 1.5 course loads, occasionally, only 1 course load is assigned.
+	
+	\textbf{Issue Description:} The main concern revolves around the stochastic behavior observed during the optimization process, leading to varying outcomes for X3 professors. My limited expertise in using OR-Tools poses a challenge in addressing this inconsistency effectively.
+	
+	\textbf{Impact:} The unpredictable assignment of course loads directly impacts the reliability of optimization results, particularly for X3 professors. This inconsistency jeopardizes the intended fulfillment of category-based constraints, potentially resulting in suboptimal course assignments.
+	
+	\textbf{Steps to Reproduce:}
+	\begin{itemize}
+		\item Utilize the code with a dataset containing X3 professors and their preferences.
+		\item Execute the optimization process.
+		\item Observe the course assignments for X3 professors, noting the variability between 1 and 1.5 course loads.
+	\end{itemize}
+	
+	\textbf{Expected Behavior:} The code should consistently assign 1.5 course loads to X3 professors, ensuring a stable and reliable optimization outcome.
+	
+	\textbf{Additional Information:} While the code struggles to consistently meet the condition that X3 professors should teach 1.5 courses, it successfully adheres to the conditions that professors must be assigned courses only if they are in their preferences. Additionally, X1 and X2 category professors are correctly assigned courses according to their specified course load formats.
+	
+	\subsection*{Consistent Input Data:}
+\begin{tabular}{|c|c|c|c|}
+	\hline
+	Courses & X1\_Aiden & X2\_Shar & X3\_Arvind \\
+	\hline
+	FD1 & 10 & 8 & 10 \\
+	FD2 & 9 & 10 & 8 \\
+	FD3 & 8 & 9 & 9 \\
+	\hline
+\end{tabular}
+	
+	\subsection*{Consistent Output Data:}
+	\begin{tabular}{|c|c|}
+		\hline
+		Course & Professor \\
+		\hline
+		FD1 & X1\_Aiden \\
+		FD1 & X3\_Arvind \\
+		FD2 & X2\_Shar \\
+		FD2 & X3\_Arvind \\
+		FD3 & X2\_Shar \\
+		FD3 & X3\_Arvind \\
+		\hline
+	\end{tabular}
+	
+	
+	\textbf{Inconsistent Input Data:}
+\begin{tabular}{|c|cccccccccccccccccccccccccccc|}
+	\hline
+	Courses & X1\_Aiden & X1\_Bella & X1\_Caleb & X1\_Delilah & X1\_Ethan & X1\_Fiona & X1\_Gabriel & X1\_Hannah & X1\_Isaac & X1\_Jasmine & X2\_Kaden & X2\_Lily & X2\_Mason & X2\_Nora & X2\_Oliver & X2\_Penelope & X2\_Quentin & X2\_Rose & X3\_Sebastian & X3\_Tessa & X3\_Uriel & X3\_Violet & X3\_William & X3\_Xena & X3\_Yosef & X3\_Daniel & X3\_Donald & X3\_Zari & X3\_Mohar & X3\_Abdul \\
+	\hline
+	FDE2 & 0 & 1 & 10 & 0 & 10 & 0 & 1 & 0 & 2 & 10 & 0 & 0 & 8 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 10 & 2 & 0 & 0 & 0 & 3 & 0 & 0 & 5 & 0 \\
+	FDE5 & 0 & 0 & 0 & 5 & 0 & 0 & 6 & 0 & 6 & 0 & 0 & 7 & 0 & 0 & 0 & 7 & 0 & 4 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 \\
+	FDC10 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 8 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 2 & 3 & 0 & 10 & 0 & 9 & 7 \\
+	HDC2 & 0 & 4 & 0 & 6 & 0 & 0 & 10 & 0 & 9 & 0 & 0 & 8 & 0 & 0 & 2 & 9 & 0 & 0 & 2 & 0 & 6 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 4 & 6 \\
+	HDC1 & 4 & 8 & 0 & 0 & 1 & 0 & 0 & 10 & 0 & 0 & 0 & 9 & 0 & 5 & 8 & 10 & 6 & 9 & 0 & 0 & 3 & 0 & 9 & 0 & 0 & 9 & 3 & 1 & 0 & 0 \\
+	FDC2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 9 & 0 & 5 & 8 & 0 & 2 & 0 & 5 & 0 & 0 & 0 & 0 & 7 & 0 & 6 & 3 & 0 & 0 & 7 & 0 & 9 & 0 & 0 \\
+	HDE4 & 7 & 0 & 8 & 1 & 4 & 5 & 0 & 5 & 0 & 6 & 9 & 0 & 4 & 0 & 0 & 0 & 2 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 7 & 0 & 5 & 0 & 0 & 0 \\
+	FDC11 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 1 & 4 & 9 & 7 & 0 & 0 & 0 & 7 & 4 & 5 & 0 & 0 & 0 & 0 & 9 & 10 & 0 & 5 & 0 & 8 & 0 & 8 & 5 \\
+	FDC7 & 5 & 2 & 9 & 4 & 0 & 10 & 3 & 2 & 5 & 4 & 1 & 0 & 0 & 0 & 4 & 0 & 3 & 0 & 8 & 10 & 0 & 0 & 7 & 7 & 0 & 4 & 0 & 2 & 1 & 3 \\
+	HDE1 & 8 & 9 & 3 & 0 & 0 & 9 & 0 & 0 & 8 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 1 & 6 & 5 & 0 & 1 & 0 & 0 & 2 & 1 \\
+	HDC3 & 0 & 0 & 0 & 10 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 3 & 2 & 0 & 0 & 3 & 4 & 0 & 10 & 2 & 8 & 0 & 0 & 9 & 5 & 0 & 8 \\
+	FDC4 & 1 & 0 & 6 & 0 & 0 & 0 & 2 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 7 & 7 & 0 & 8 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	FDC3 & 2 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 7 & 0 & 0 & 10 & 10 & 7 & 0 & 0 & 8 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 0 & 10 & 6 & 8 & 3 & 0 \\
+	FDE4 & 0 & 7 & 0 & 3 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 0 & 3 & 0 & 9 & 3 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 1 & 7 & 0 & 0 \\
+	FDC1 & 0 & 6 & 5 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 1 & 10 & 0 & 0 & 0 & 0 & 1 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	FDC6 & 9 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 10 & 0 & 0 & 6 & 7 & 0 & 6 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+	HDE2 & 0 & 0 & 0 & 2 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 8 & 0 & 5 & 7 & 0 & 2 & 0 & 8 & 4 & 4 & 2 & 0 & 10 & 7 & 0 \\
+	HDC4 & 0 & 10 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 0 & 6 & 3 & 5 & 0 & 10 & 0 & 9 & 1 & 0 & 3 & 0 & 4 & 0 & 9 & 6 & 5 & 0 & 0 & 10 & 0 \\
+	HDE3 & 3 & 0 & 0 & 8 & 9 & 0 & 8 & 0 & 0 & 0 & 4 & 0 & 0 & 2 & 0 & 0 & 4 & 8 & 0 & 6 & 5 & 8 & 0 & 0 & 0 & 0 & 2 & 6 & 0 & 10 \\
+	FDE3 & 0 & 3 & 0 & 0 & 0 & 0 & 9 & 6 & 0 & 0 & 10 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 7 & 1 & 6 & 10 & 0 & 0 & 0 & 6 & 0 \\
+	FDC9 & 6 & 0 & 1 & 0 & 0 & 8 & 4 & 8 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 5 & 0 & 2 & 5 & 0 & 0 & 0 & 0 & 3 & 1 & 0 & 0 & 0 & 0 & 4 \\
+	FDC8 & 0 & 0 & 0 & 0 & 0 & 4 & 7 & 4 & 0 & 7 & 2 & 2 & 0 & 4 & 0 & 0 & 0 & 10 & 10 & 0 & 0 & 0 & 0 & 10 & 8 & 0 & 0 & 0 & 0 & 0 \\
+	FDE1 & 0 & 5 & 4 & 9 & 2 & 0 & 5 & 0 & 1 & 3 & 3 & 0 & 0 & 9 & 0 & 1 & 0 & 6 & 0 & 1 & 0 & 0 & 5 & 0 & 2 & 0 & 0 & 0 & 0 & 0 \\
+	FDC5 & 10 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 2 & 8 & 5 & 0 & 0 & 0 & 8 & 7 & 4 & 0 & 0 \\
+	FDE6 & 0 & 0 & 7 & 7 & 7 & 2 & 0 & 0 & 0 & 0 & 0 & 1 & 9 & 1 & 0 & 0 & 10 & 0 & 4 & 5 & 0 & 0 & 0 & 1 & 0 & 0 & 4 & 3 & 0 & 9 \\
+	\hline
+\end{tabular}
+	
+	\textbf{Inconsistent Output Data:}
+\begin{tabular}{|c|c|}
+	\hline
+	Course & Professor \\
+	\hline
+	FDE2 & X1\_Jasmine \\
+	FDE2 & X3\_Uriel \\
+	FDE5 & X2\_Lily \\
+	FDE5 & X2\_Penelope \\
+	FDC10 & X3\_Donald \\
+	FDC10 & X3\_Mohar \\
+	HDC2 & X1\_Gabriel \\
+	HDC2 & X3\_Yosef \\
+	HDC1 & X2\_Penelope \\
+	HDC1 & X2\_Rose \\
+	FDC2 & X2\_Kaden \\
+	FDC2 & X3\_Zari \\
+	HDE4 & X2\_Kaden \\
+	HDE4 & X3\_Tessa \\
+	FDC11 & X3\_Violet \\
+	FDC11 & X3\_William \\
+	FDC7 & X1\_Caleb \\
+	FDC7 & X3\_Tessa \\
+	HDE1 & X1\_Bella \\
+	HDE1 & X3\_Xena \\
+	HDC3 & X3\_Violet \\
+	HDC3 & X3\_Donald \\
+	FDC4 & X2\_Quentin \\
+	FDC4 & X2\_Rose \\
+	FDC3 & X2\_Lily \\
+	FDC3 & X2\_Mason \\
+	FDE4 & X2\_Oliver \\
+	FDE4 & X3\_Daniel \\
+	FDC1 & X2\_Nora \\
+	FDC1 & X3\_Uriel \\
+	FDC6 & X1\_Isaac \\
+	FDC6 & X2\_Mason \\
+	HDE2 & X3\_William \\
+	HDE2 & X3\_Zari \\
+	HDC4 & X2\_Oliver \\
+	HDC4 & X3\_Mohar \\
+	HDE3 & X1\_Ethan \\
+	HDE3 & X3\_Abdul \\
+	FDE3 & X3\_Sebastian \\
+	FDE3 & X3\_Yosef \\
+	FDC9 & X1\_Fiona \\
+	FDC9 & X1\_Hannah \\
+	FDC8 & X3\_Sebastian \\
+	FDC8 & X3\_Xena \\
+	FDE1 & X1\_Delilah \\
+	FDE1 & X2\_Nora \\
+	FDC5 & X1\_Aiden \\
+	FDC5 & X3\_Daniel \\
+	FDE6 & X2\_Quentin \\
+	FDE6 & X3\_Abdul \\
+	\hline
+\end{tabular}
+
+	\textbf{Observation:} In this case, the code exhibits inconsistent behavior by occasionally assigning only 1 course load to X3 professors instead of the expected 1.5 course loads. This inconsistency contradicts the specified category-based constraints.
+	
+	\textbf{Additional Notes:} While the code consistently meets the condition that professors must be assigned courses only if they are in their preferences and correctly handles X1 and X2 category professors, the issue arises specifically in the assignment of course loads to X3 professors. The challenge lies in addressing this inconsistency due to my limited expertise in using OR-Tools effectively.
+	
+	The provided examples illustrate the variability in outcomes, emphasizing the need for further investigation to achieve a stable and reliable optimization outcome, specifically for X3 professors. You can reproduce these examples by running \texttt{ProfAllocatorSingleOutput.py} with input as \texttt{ModelInput0.csv} and \texttt{ModelInput1.csv} respectively.
+	
+\end{document}
