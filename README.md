@@ -44,3 +44,21 @@ Ensure you have the OR-Tools library installed. OR-Tools is a powerful optimizat
 
 ```bash
 pip install ortools
+```
+
+## Two Source Code Pieces
+
+In this project, we have developed two distinct source code pieces, each serving a specific purpose in the optimization of the University Course Assignment System.
+
+### Source 1 (src1)
+
+The code in `src1` is designed to provide the most optimal solution by rigorously maximizing the objective function. It focuses on finding the assignment that results in the highest total preference score while adhering to the specified constraints and preferences. The optimization algorithm implemented in `src1` aims to achieve the best possible distribution of courses among professors.
+
+### Source 2 (src2)
+
+On the other hand, `src2` takes a different approach. Instead of solely concentrating on the most optimal solution, this code generates a substantial number of suboptimal solutions. The emphasis here is on exploring a broader solution space, allowing for a variety of potential course assignments. This can be particularly useful in scenarios where multiple acceptable solutions are acceptable, and a diverse set of outcomes is desired.
+
+The existence of both source code pieces provides users with flexibility. Depending on the project requirements and objectives, one can choose between the highly optimized solution from `src1` or explore a range of alternatives with `src2`. This versatility caters to different use cases and preferences within the context of the University Course Assignment System.
+
+It's recommended to evaluate and choose the source code piece that aligns best with the specific goals of your optimization project. Additionally, the comparison between the outputs of both sources can offer valuable insights into the diversity and robustness of the solutions generated.
+
