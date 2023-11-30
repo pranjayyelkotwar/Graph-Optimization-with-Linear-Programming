@@ -17,7 +17,7 @@ This Python code utilizes the OR-Tools library to optimize the University Course
 
 The objective function aims to maximize the double summation of Xij · pij over all courses and professors:
 
-\[ \text{Maximize} \sum_{i \in I} \sum_{j \in J} X_{ij} \cdot p_{ij} \]
+$$\[ \text{Maximize} \sum_{i \in I} \sum_{j \in J} X_{ij} \cdot p_{ij} \]
 
 ## Constraints
 
