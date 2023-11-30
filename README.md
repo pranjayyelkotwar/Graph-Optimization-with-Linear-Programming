@@ -62,3 +62,23 @@ The existence of both source code pieces provides users with flexibility. Depend
 
 It's recommended to evaluate and choose the source code piece that aligns best with the specific goals of your optimization project. Additionally, the comparison between the outputs of both sources can offer valuable insights into the diversity and robustness of the solutions generated.
 
+# Assignment Validation Scripts
+
+## CheckFile.py
+
+The `CheckFile.py` script validates the format and constraints of an individual assignment CSV file.
+
+### Usage
+
+```bash
+python CheckFile.py <input_file>
+```
+## CheckFolder.py
+
+The `CheckFolder.py` script validates the format and constraints of all csv files in a given input-folder
+
+### Usage
+
+```bash
+python CheckFolder.py <input_directory>
+```
